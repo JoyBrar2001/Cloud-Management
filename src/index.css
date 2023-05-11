@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .bottom-bar-li{
+        @apply flex flex-row justify-center items-center gap-2;
+    }
+}
