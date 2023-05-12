@@ -16,4 +16,8 @@
     .bottom-bar-li{
         @apply flex flex-row justify-center items-center gap-2;
     }
+
+    .phone-navbar{
+        @apply flex flex-col bg-white justify-between items-center shadow-2xl px-4;
+    }
 }

@@ -36,9 +36,9 @@ const Navbar = () => {
 
       </div>
 
-      <div className='block md:hidden'>
-        <ul className={nav ? 'flex flex-col bg-white justify-between items-center shadow-2xl px-4' : 'hidden'}>
-          <li className='cursor-pointer border-t-2 border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Home</li>
+      <div className='absolute md:hidden w-screen'>
+        <ul className={nav ? 'flex flex-col bg-white justify-between items-center shadow-2xl px-4 top-0 pt-5' : 'hidden'}>
+          <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Home</li>
           <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>About</li>
           <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Support</li>
           <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Platforms</li>
