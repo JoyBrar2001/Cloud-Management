@@ -17,7 +17,7 @@ const Navbar = () => {
 
         <div className='flex flex-row justify-center items-center gap-4'>
             <p>Sign In</p>
-            <button className='bg-[#3f3cd0] px-4 py-1.5 rounded-lg text-white'>Sign up</button>
+            <button className='button-transition bg-[#3f3cd0] px-4 py-1.5 rounded-lg text-white'>Sign up</button>
         </div>
 
       {/* <MenuIcon className='w-5' /> */}
