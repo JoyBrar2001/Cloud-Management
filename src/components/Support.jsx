@@ -13,9 +13,9 @@ const Support = () => {
 
       <div className='max-w-[1240px] mx-auto text-white relative'>
         <div className='px-4 py-12 text-center'>
-            <h2 className='text-3xl uppercase tracking-wider my-6'>Support</h2>
-            <h3 className='text-6xl font-bold' my-6>Finding the right team</h3>
-            <p className='text-xl mt-10 text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus recusandae, repellat ex omnis veniam delectus natus commodi culpa hic nesciunt aspernatur neque officia earum, a id alias beatae minima? Iste quos et, laborum magnam veniam error repellendus pariatur architecto.</p>
+            <h2 className='text-2xl md:text-3xl uppercase tracking-wider my-6'>Support</h2>
+            <h3 className='text-5xl md:text-6xl font-bold my-6'>Finding the right team</h3>
+            <p className='text-base sm:text-lg md:text-xl mt-10 text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatibus recusandae, repellat ex omnis veniam delectus natus commodi culpa hic nesciunt aspernatur neque officia earum, a id alias beatae minima? Iste quos et, laborum magnam veniam error repellendus pariatur architecto.</p>
         </div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black'>
