@@ -1,9 +1,17 @@
 import React from 'react'
 import { TiTick } from 'react-icons/ti'
 
+import { motion } from 'framer-motion'
+
 const Platforms = () => {
   return (
-    <div className='w-full h-full my-20'>
+    <motion.div 
+      initial={{opacity:0, x:-100}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:1, type:'spring'}}
+      className='w-full h-full my-20'
+      id='platforms'
+    >
       <h1 className='text-center text-6xl font-bold'>All-In-One Platform</h1>
       <p className='text-center my-4 text-gray-600'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sed aliquam cum facilis, reprehenderit saepe exercitationem inventore laborum?</p>
 
@@ -74,7 +82,7 @@ const Platforms = () => {
         </div>
         
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,3 +1,5 @@
+import { BsTelephone, BsGlobe2 } from 'react-icons/bs'
+
 export const aboutCards = [
     {
         number: '100%',

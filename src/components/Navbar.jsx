@@ -11,13 +11,13 @@ const Navbar = () => {
   return (
     <div className='fixed flex flex-col md:flex-row h-16 w-full justify-between items-center shadow-lg md:px-4 bg-white z-20'>
       <div className='hidden md:flex flex-row justify-center items-center gap-4 md:gap-6'>
-        <h1 className='text-3xl font-bold'>Brand.</h1>
+        <h1 className='text-3xl font-bold'><a href="#home">Brand.</a></h1>
         <ul className='flex justify-between items-center gap-2 md:gap-4'>
-          <li className='cursor-pointer'>Home</li>
-          <li className='cursor-pointer'>About</li>
-          <li className='cursor-pointer'>Support</li>
-          <li className='cursor-pointer'>Platforms</li>
-          <li className='cursor-pointer'>Pricing</li>
+          <li className='cursor-pointer'><a href="#home">Home</a></li>
+          <li className='cursor-pointer'><a href="#about">About</a></li>
+          <li className='cursor-pointer'><a href="#support">Support</a></li>
+          <li className='cursor-pointer'><a href="#platforms">Platforms</a></li>
+          <li className='cursor-pointer'><a href="#pricing">Pricing</a></li>
         </ul>
       </div>
 

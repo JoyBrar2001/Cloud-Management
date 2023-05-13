@@ -8,7 +8,7 @@ import { IoIosArrowDropupCircle } from 'react-icons/io'
 
 const Hero = () => {
   return (
-    <div className='flex flex-col md:flex-row min-h-screen h-full w-full justify-center items-center gap-12 relative p-4 pt-24'>
+    <div id='home' className='flex flex-col md:flex-row min-h-screen h-full w-full justify-center items-center gap-12 relative p-4 pt-24'>
       <motion.div 
         initial={{opacity:0, x:-100}}
         whileInView={{opacity: 1, x: 0}}

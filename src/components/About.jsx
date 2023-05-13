@@ -25,7 +25,7 @@ const CreateAbout = (props, index) => {
 
 const About = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full' id='about'>
             <div
                 className='flex flex-col justify-center items-center py-20 max-w-[1200px] mx-auto p-4'
 

@@ -8,9 +8,13 @@
     font-family: 'poppins';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @layer components{
     .button-transition{
-        @apply transition-all duration-150 ease-in-out hover:shadow-2xl hover:shadow-[#3f3cd0] hover:scale-105;
+        @apply transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-[#3f3cd0] hover:scale-105;
     }
 
     .bottom-bar-li{
@@ -19,5 +23,9 @@
 
     .phone-navbar{
         @apply flex flex-col bg-white justify-between items-center shadow-2xl px-4;
+    }
+
+    .pricing-button{
+        @apply hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-gray-900/50;
     }
 }
