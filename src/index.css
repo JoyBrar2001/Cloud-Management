@@ -10,7 +10,7 @@
 
 @layer components{
     .button-transition{
-        @apply transition-all duration-150 ease-in-out hover:shadow-2xl hover:scale-105;
+        @apply transition-all duration-150 ease-in-out hover:shadow-2xl hover:shadow-[#3f3cd0] hover:scale-105;
     }
 
     .bottom-bar-li{
