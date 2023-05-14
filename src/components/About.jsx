@@ -10,11 +10,11 @@ const CreateAbout = (props, index) => {
     return (
 
         <motion.div
-            className='px-24 py-12 shadow-lg rounded-lg my-3'
+            className='px-24 py-12 shadow-lg rounded-lg my-3 transition-shadow duration-200 hover:shadow-2xl hover:shadow-purple-600/20'
             initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ type: 'spring', duration: 0.7, delay: props.i * 0.2 }}
-            whileHover={{ scale: 1.1, transition: { type: 'spring', duration: 0.3 } }}
+            whileInView={{ opacity: 1, x: 0, transition:{ type: 'spring', duration: 0.7, delay: props.i * 0.2 } }}
+            
+            whileHover={{ scale: 1.1, transition: { type: 'spring', duration: 0.3, delay: 0 } }}
         >
             <h1 className='text-[#3f3cd0] font-bold text-5xl md:text-6xl lg:text-7xl tracking-wide text-center'>{props.number}</h1>
             <p className='text-center text-gray-500'>{props.text}</p>

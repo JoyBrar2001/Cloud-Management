@@ -1,5 +1,3 @@
-import { BsTelephone, BsGlobe2 } from 'react-icons/bs'
-
 export const aboutCards = [
     {
         number: '100%',
@@ -12,5 +10,18 @@ export const aboutCards = [
     {
         number: '100K',
         text: 'Transactions',
+    },
+]
+
+export const pricingCards = [
+    {
+        id: 1,
+        type: 'Standard',
+        price: 49,
+    },
+    {
+        id: 2,
+        type: 'Enterprise',
+        price: 86,
     },
 ]

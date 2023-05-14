@@ -13,11 +13,11 @@ const Navbar = () => {
       <div className='hidden md:flex flex-row justify-center items-center gap-4 md:gap-6'>
         <h1 className='text-3xl font-bold'><a href="#home">Brand.</a></h1>
         <ul className='flex justify-between items-center gap-2 md:gap-4'>
-          <li className='cursor-pointer'><a href="#home">Home</a></li>
-          <li className='cursor-pointer'><a href="#about">About</a></li>
-          <li className='cursor-pointer'><a href="#support">Support</a></li>
-          <li className='cursor-pointer'><a href="#platforms">Platforms</a></li>
-          <li className='cursor-pointer'><a href="#pricing">Pricing</a></li>
+          <li className='cursor-pointer desktop-navbar-li'><a href="#home">Home</a></li>
+          <li className='cursor-pointer desktop-navbar-li'><a href="#about">About</a></li>
+          <li className='cursor-pointer desktop-navbar-li'><a href="#support">Support</a></li>
+          <li className='cursor-pointer desktop-navbar-li'><a href="#platforms">Platforms</a></li>
+          <li className='cursor-pointer desktop-navbar-li'><a href="#pricing">Pricing</a></li>
         </ul>
       </div>
 
