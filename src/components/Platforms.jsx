@@ -2,13 +2,12 @@ import React from 'react'
 import { TiTick } from 'react-icons/ti'
 
 import { motion } from 'framer-motion'
+import { fadeIn } from '../constants/motion'
 
 const Platforms = () => {
   return (
     <motion.div 
-      initial={{opacity:0, x:-100}}
-      whileInView={{opacity:1, x:0}}
-      transition={{duration:1, type:'spring'}}
+      variants={fadeIn()} initial='hidden' whileInView='show'
       className='w-full h-full my-20'
       id='platforms'
     >

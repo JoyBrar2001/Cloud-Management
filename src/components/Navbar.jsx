@@ -4,6 +4,29 @@ import { AiOutlineClose } from 'react-icons/ai'
 
 const Navbar = () => {
 
+  const navbarList = [
+    {
+      text: 'Home',
+      to: 'home'
+    },
+    {
+      text: 'About',
+      to: 'about'
+    },
+    {
+      text: 'Support',
+      to: 'support'
+    },
+    {
+      text: 'Platforms',
+      to: 'platforms'
+    },
+    {
+      text: 'Pricing',
+      to: 'pricing'
+    },
+  ]
+
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => setNav(!nav);
@@ -13,12 +36,12 @@ const Navbar = () => {
       <div className='hidden md:flex flex-row justify-center items-center gap-4 md:gap-6'>
         <h1 className='text-3xl font-bold'><a href="#home">Brand.</a></h1>
         <ul className='flex justify-between items-center gap-2 md:gap-4'>
-          <li className='cursor-pointer desktop-navbar-li'><a href="#home">Home</a></li>
-          <li className='cursor-pointer desktop-navbar-li'><a href="#about">About</a></li>
-          <li className='cursor-pointer desktop-navbar-li'><a href="#support">Support</a></li>
-          <li className='cursor-pointer desktop-navbar-li'><a href="#platforms">Platforms</a></li>
-          <li className='cursor-pointer desktop-navbar-li'><a href="#pricing">Pricing</a></li>
-        </ul>
+
+          {navbarList.map((item, index)=>(
+            <li key={index} className='cursor-pointer desktop-navbar-li'><a href={'#' + item.to}>{item.text}</a></li>
+          ))}
+
+          </ul>
       </div>
 
 
@@ -38,11 +61,11 @@ const Navbar = () => {
 
       <div className='absolute md:hidden w-screen'>
         <ul className={nav ? 'flex flex-col bg-white justify-between items-center shadow-2xl px-4 top-0 pt-5' : 'hidden'}>
-          <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Home</li>
-          <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>About</li>
-          <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Support</li>
-          <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Platforms</li>
-          <li className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}>Pricing</li>
+
+          {navbarList.map((item, index) => (
+            <li key={index} className='cursor-pointer border-b-2 w-full text-center py-3' onClick={() => toggleNav()}><a href={'#'+item.to}>{item.text}</a></li>
+          ))}
+
           <button className='button-transition bg-white border-[#3f3cd0] border-2 px-4 rounded-lg text-[#3f3cd0] border-b-2 w-full text-center py-3 mt-6 my-3' onClick={() => toggleNav()}>Sign in</button>
           <button className='button-transition bg-[#3f3cd0] px-4 rounded-lg text-white border-b-2 w-full text-center py-3 my-3' onClick={() => toggleNav()}>Sign up</button>
         </ul>

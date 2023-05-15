@@ -6,6 +6,8 @@ import { easeInOut, motion } from 'framer-motion'
 import { BsTelephone, BsGlobe2 } from 'react-icons/bs'
 import { BiRightArrowAlt, BiChip } from 'react-icons/bi'
 
+import { fadeIn, textFadeIn } from '../constants/motion'
+
 const Support = () => {
     return (
         <div className='w-full min-h-screen mt-24' id='support'>
@@ -15,9 +17,7 @@ const Support = () => {
 
             <div className='max-w-[1240px] mx-auto text-white relative'>
                 <motion.div
-                    initial={{ opacity: 0, y: -50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, staggerChildren: 1 }}
+                    variants={textFadeIn()} initial='hidden' whileInView='show'
                     className='px-4 py-12 text-center'
                 >
                     <h2 className='text-2xl md:text-3xl uppercase tracking-wider my-6'>Support</h2>
@@ -28,9 +28,7 @@ const Support = () => {
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black'>
                     <motion.div
                         className='bg-white rounded-xl shadow-2xl'
-                        initial={{ opacity: 0, x: -100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 0, type: 'spring' }}
+                        variants={fadeIn(0)} initial='hidden' whileInView='show'
                     >
                         <div className='p-8'>
                             <div className='w-16 h-16 p-4 bg-indigo-600 flex justify-center items-center rounded-xl mt-[-4rem]'>
@@ -48,9 +46,7 @@ const Support = () => {
 
                     <motion.div
                         className='bg-white rounded-xl shadow-2xl'
-                        initial={{ opacity: 0, x: -100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 0.3, type: 'spring' }}
+                        variants={fadeIn(1)} initial='hidden' whileInView='show'
                     >
                         <div className='p-8'>
                             <div className='w-16 h-16 p-4 bg-indigo-600 flex justify-center items-center rounded-xl mt-[-4rem]'>
@@ -68,9 +64,7 @@ const Support = () => {
 
                     <motion.div 
                         className='bg-white rounded-xl shadow-2xl'
-                        initial={{ opacity: 0, x: -100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 1, delay: 0.6, type: 'spring' }}
+                        variants={fadeIn(2)} initial='hidden' whileInView='show'
                     >
                         <div className='p-8'>
                             <div className='w-16 h-16 p-4 bg-indigo-600 flex justify-center items-center rounded-xl mt-[-4rem]'>

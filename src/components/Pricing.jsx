@@ -2,12 +2,12 @@ import React from 'react'
 import { TiTick } from 'react-icons/ti'
 import { motion } from 'framer-motion'
 import { pricingCards } from '../constants/data'
+import { fadeIn, textFadeIn, hoverZoom } from '../constants/motion'
 
 const CreatePricingCard = ({index, type, price}) => (
     <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0, transition: { duration: 1, type: 'spring' } }}
-        whileHover={{ scale: 1.05, transition: { duration: 0.3, type: 'spring' } }}
+        variants={fadeIn(index)} initial='hidden' whileInView='show'
+        whileHover={hoverZoom}
         className='bg-white p-6 rounded-lg shadow-xl'
     >
         <button className='bg-[#91a4f5] text-sm px-2 rounded-full mb-4 font-semibold uppercase'>{type}</button>
@@ -36,9 +36,7 @@ const Pricing = () => {
             <div className='absolute w-full h-[600px] bg-gray-900 text-center px-4 pt-10 z-[-1]' />
             <div className='w-full text-center px-4 pt-10 z-'>
                 <motion.div
-                    initial={{ opacity: 0, y: -50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, staggerChildren: 1 }}
+                    variants={textFadeIn()} initial='hidden' whileInView='show'
                     className='max-w-[900px] mx-auto'
                 >
                     <h2 className='text-gray-300 text-2xl uppercase'>Pricing</h2>
